@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/styleMeteo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+        <title>Portfolio Imad HOUARI</title>
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+                <ul class="navLinks">
+                    <li class="itemNav itemNav1"><a href="#accueil">Accueil</a></li>
+                    <li class="itemNav itemNav2"><a href="#projets">Projets</a></li>
+                    <li class="itemNav itemNav3"><a href="#a-propos">À propos</a></li>
+                    <li class="itemNav itemNav4"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="accueil">
+                <h1>Bienvenue sur mon portfolio</h1>
+            </section>
+
+            <section id="a-propos">
+                <div class="a-proposContentBox">
+                    <h2>À propos de moi</h2>
+                    <div class="a-proposTxt"></div>
+                </div>
+            </section>
+
+            <section id="projets">
+                <h2>Mes projets</h2>
+                <ul>
+                    <li>
+                        <h3>Projet 1</h3>
+                        <p>Une description de mon premier projet</p>
+                        <a href="#">Voir le projet</a>
+                    </li>
+                    <li>
+                        <h3>Projet 2</h3>
+                        <p>Une description de mon deuxième projet</p>
+                        <a href="#">Voir le projet</a>
+                    </li>
+                    <li>
+                        <h3>Projet 3</h3>
+                        <p>Une description de mon troisième projet</p>
+                        <a href="#">Voir le projet</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contactez-moi</h2>
+                <form>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Anne.Onyme@mail.com" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="15" placeholder="Votre message ici..." required></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </form>
+            </section>
+        </main>
+
+        <!------------------------- PARTIE METEO------------ -->
+        <button id="ouvrir-popup">Ouvrir le popup</button>
+        <div class="popup-container">
+
+            <h1>météo</h1>
+            <p>La température actuelle à <span class="ville"></span> est de <span class="temperature"></span>.</p>
+            <div class="inputFlex">
+                <label for="ville">Choissisez votre ville </label>
+                <input type="text" id="ville" value="Strasbourg" required>
+            </div>
+            <button type="submit" class="changeBtn">Changer de ville </button>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Mon Portfolio</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <Script src="/Js/TypedJS.js"></Script>
+        <script src="/js/appMeteo.js"></script>
+        <script src="/Js/position.js"></script>
+    </body>
+
+</html>
