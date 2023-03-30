@@ -6,6 +6,10 @@
 	width: clamp(75px, 35%, 200px);
 }
 
+/* #ouvrir-popup.above-footer {
+
+} */
+
 /* Styles pour le conteneur du popup */
 .popup-container {
 	background: #4d5980;
@@ -27,7 +31,6 @@
 	align-items: center;
 	justify-content: space-evenly;
 }
-
 /* Styles pour le titre principal */
 h1 {
 	color: #fff;
