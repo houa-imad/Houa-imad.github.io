@@ -1,5 +1,6 @@
 /* Styles pour le bouton d'ouverture du popup */
 #ouvrir-popup {
+	position: fixed;
 	bottom: 0;
 	right: 20px;
 	width: clamp(75px, 35%, 200px);
