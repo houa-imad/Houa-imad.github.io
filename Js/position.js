@@ -1,18 +1,24 @@
-const button = document.querySelector("#ouvrir-popup");
-const footer = document.querySelector("footer");
-const footerHeight = footer.offsetHeight;
+function getFooterHeight() {
+	return document.querySelector("footer").offsetHeight;
+}
 
-window.addEventListener("scroll", function () {
-	const buttonTop = button.offsetTop + button.offsetHeight;
-	const footerTop = footer.offsetTop;
+function getFooterPosition() {
+	return document.querySelector("footer").getBoundingClientRect();
+}
 
-	if (buttonTop < footerTop - footerHeight) {
-		button.style.position = "fixed";
-		button.style.bottom = "0";
-		console.log("ok");
+function isFooterVisible() {
+	const footerPosition = getFooterPosition();
+	return footerPosition.top < window.innerHeight && footerPosition.bottom >= 0;
+}
+
+function updatePopupButtonPosition() {
+	const popupButton = document.querySelector("#ouvrir-popup");
+	if (isFooterVisible()) {
+		popupButton.style.bottom = `${getFooterHeight()}px`;
+		console.log("replacement du bouton météo");
 	} else {
-		button.style.position = "absolute";
-		button.style.bottom = `${footerHeight}px`;
-		console.log("okkk");
+		popupButton.style.bottom = "0";
 	}
-});
+}
+
+window.addEventListener("scroll", updatePopupButtonPosition);
