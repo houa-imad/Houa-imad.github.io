@@ -3,56 +3,12 @@
 	position: fixed;
 	bottom: 0;
 	right: 20px;
-	width: clamp(75px, 35%, 200px);
-}
-
-/* #ouvrir-popup.above-footer {
-
-} */
-
-/* Styles pour le conteneur du popup */
-.popup-container {
-	background: #4d5980;
-	position: fixed;
-	bottom: 70px;
-	right: 20px;
-	width: clamp(300px, 50%, 600px);
-	height: 50vh;
-	border-radius: 5px;
-	display: none;
-	padding: 20px;
-	text-align: center;
-}
-
-/* Styles pour l'affichage du popup */
-.open {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-}
-/* Styles pour le titre principal */
-h1 {
-	color: #fff;
-	font-size: clamp(16px, 100vw, 84px);
-}
-
-/* Styles pour les paragraphes et sous-titres */
-p,
-h2 {
-	color: #fff;
-	font-size: clamp(1.5em, 4.5vw, 2.4em);
-}
-
-/* Styles pour les étiquettes de formulaire */
-label {
-	color: #fff;
 }
 
 /* Styles pour le bouton */
 #ouvrir-popup,
 .changeBtn {
-	width: 10%;
+	width: clamp(48px, 35%, 200px);
 	font-size: 1.5em;
 	border-radius: 5px;
 	border: none;
@@ -81,13 +37,52 @@ label {
 .changeBtn {
 	width: 60%;
 }
+/* Styles pour le conteneur du popup */
+.popup-container {
+	background: #4d5980;
+	position: fixed;
+	bottom: 70px;
+	right: 20px;
+	width: clamp(250px, 50%, 450px);
+	height: 50vh;
+	border-radius: 5px;
+	display: none;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0px 5px 10px;
+}
+
+/* Styles pour l'affichage du popup */
+.open {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+/* Styles pour le titre principal */
+.meteoTitle {
+	color: #fff;
+	font-size: clamp(48px, 10vw, 84px);
+}
+
+/* Styles pour les paragraphes et sous-titres */
+p {
+	color: #fff;
+	font-size: clamp(1.5em, 4.5vw, 2.4em);
+}
+
+/* Styles pour les étiquettes de formulaire */
+label {
+	color: #fff;
+}
 
 /* Styles pour le conteneur des champs de formulaire */
 .inputFlex {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 0.8em;
+	font-size: clamp(10px, 2vw, 24px);
+	width: 100%
 }
 
 /* Styles pour les champs de formulaire de type texte */
@@ -96,7 +91,7 @@ input[type="text"] {
 	color: #222222d5;
 	padding: 3px;
 	border-radius: 5px;
-	box-shadow: 0 5px 10px #000;
+	
 	margin-bottom: 10px;
 	margin-left: 10px;
 	border: none;
