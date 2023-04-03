@@ -129,6 +129,16 @@ section li a:hover {
 	animation: boxAPropos ease-in-out 3.5s forwards;
 }
 
+.pauseBtn,
+.resetBtn {
+	width: 50px;
+	height: 50px;
+	font-weight: bold;
+	background: #131e40;
+	color: #fff;
+	cursor: pointer;
+}
+
 @keyframes boxAPropos {
 	from {
 		transform: translateX(-76%);
