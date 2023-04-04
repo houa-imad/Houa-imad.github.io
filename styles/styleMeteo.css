@@ -104,3 +104,12 @@ input:focus[type="text"] {
 	color: #000;
 	box-shadow: 0 3px 7px #000;
 }
+
+/* styles des icones */
+.icon img {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+}

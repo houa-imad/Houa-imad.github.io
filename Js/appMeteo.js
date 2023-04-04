@@ -4,6 +4,7 @@ const popupContainer = document.querySelector(".popup-container");
 const bouton = document.querySelector(".changeBtn");
 const popupBtn = document.querySelector("#ouvrir-popup");
 const villeInput = document.querySelector("#ville");
+const icon = document.querySelector(".icon");
 let villeDefaut = "Strasbourg";
 
 popupBtn.addEventListener("click", function () {
@@ -48,20 +49,7 @@ function afficherMeteo(villeSaisie) {
 		.then((donnees) => {
 			ville.textContent = donnees.name;
 			temperature.textContent = donnees.main.temp + "°C";
-
-			// Stylisation en fonction des conditions météorologiques
-			if (donnees.weather[0].main === "Clear") {
-				popupContainer.style.backgroundColor = "skyblue";
-			} else if (donnees.weather[0].main === "Clouds") {
-				popupContainer.style.backgroundColor = "lightgray";
-			} else if (donnees.weather[0].main === "Rain") {
-				popupContainer.style.backgroundColor = "lightblue";
-			} else if (donnees.weather[0].main === "Thunderstorm") {
-				popupContainer.style.backgroundColor = "purple";
-			} else {
-				popupContainer.style.backgroundColor = "white";
-			}
-
+			icon.innerHTML = `<img src="https://openweathermap.org/img/w/${donnees.weather[0].icon}.png">`;
 			console.log("appelé");
 		})
 		.catch((erreur) => {
