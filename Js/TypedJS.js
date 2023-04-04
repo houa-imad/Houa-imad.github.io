@@ -6,7 +6,8 @@ const nextBtn = document
 	.querySelector(".resetBtn")
 	.addEventListener("click", resetString);
 let typedAnim;
-let pauseStart = true;
+var pauseStart = true;
+
 function animationTypedJS() {
 	typedAnim = new Typed(".a-proposTxt", {
 		strings: [
@@ -41,11 +42,10 @@ function pauseString() {
 
 function resetString() {
 	let pauseBtn = document.querySelector(".pauseBtn");
-	if (typedAnim && pauseStart) {
-		typedAnim.reset();
-	} else {
+	if (typedAnim) {
+		pauseStart = true;
 		pauseBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+		typedAnim.start();
 		typedAnim.reset();
-		pauseStart = false;
 	}
 }
