@@ -82,7 +82,7 @@ label {
 	justify-content: center;
 	align-items: center;
 	font-size: clamp(10px, 2vw, 24px);
-	width: 100%
+	width: 100%;
 }
 
 /* Styles pour les champs de formulaire de type texte */
@@ -91,7 +91,7 @@ input[type="text"] {
 	color: #222222d5;
 	padding: 3px;
 	border-radius: 5px;
-	
+
 	margin-bottom: 10px;
 	margin-left: 10px;
 	border: none;

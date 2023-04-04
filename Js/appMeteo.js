@@ -48,6 +48,20 @@ function afficherMeteo(villeSaisie) {
 		.then((donnees) => {
 			ville.textContent = donnees.name;
 			temperature.textContent = donnees.main.temp + "°C";
+
+			// Stylisation en fonction des conditions météorologiques
+			if (donnees.weather[0].main === "Clear") {
+				popupContainer.style.backgroundColor = "skyblue";
+			} else if (donnees.weather[0].main === "Clouds") {
+				popupContainer.style.backgroundColor = "lightgray";
+			} else if (donnees.weather[0].main === "Rain") {
+				popupContainer.style.backgroundColor = "lightblue";
+			} else if (donnees.weather[0].main === "Thunderstorm") {
+				popupContainer.style.backgroundColor = "purple";
+			} else {
+				popupContainer.style.backgroundColor = "white";
+			}
+
 			console.log("appelé");
 		})
 		.catch((erreur) => {

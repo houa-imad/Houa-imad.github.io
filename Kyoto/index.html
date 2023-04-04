@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kyoto</title>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/Kyoto/styles/style.css">
+    </head>
+
+    <body>
+        <!-------------------------------------------------------------------------HEADER NAVBAR--------------------------------------------->
+        <nav>
+            <input type="checkbox" class="checkbox" id="check">
+            <ul class="liste-nav">
+                <li class="navItem"> <a href="#home">Accueil</a> </li>
+                <li class="navItem"> <a href="#asym">Que faire ?</a></li>
+                <li class="navItem"> <a href="#tarifsId">Tarifs</a></li>
+                <li class="navItem"> <a href="#contactId">Contact</a></li>
+            </ul>
+            <label for="check">
+                <img src="/kyoto/menu.svg" alt="logo menu " class="menuLogo">
+            </label>
+        </nav>
+
+        <!----------------------------------------------------------------- SECTION ACCUEIL ------------------------------------------------------------>
+        <div class="accueil" id="home">
+            <img src="kyoto/logo-porte-japon.jpg" alt="logo d'une porte japonaise" class="logoKyoto">
+            <h1>Découvrez Kyoto</h1>
+            <p class="txtAccueil">La ville impériale du Japon </p>
+            <a href="" class="btnAccueil">En savoir plus</a>
+        </div>
+        <!------------------------------------------------------------------ SECTION TEMPLE  ---------------------------------------------------------------->
+        <section class="sectionTemple" id="asym">
+            <h2>Que faire à Kyoto ?</h2>
+            <div class="bloc bloc-left bloc-1">
+                <div class="bloc-txt-left">
+                    <h3>Visitez des temples</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla atque repudiandae eum omnis dolorem fugit, praesentium at rerum placeat ipsam animi similique et ducimus dicta quibusdam dolores fuga commodi nesciunt.
+                    </p>
+                    <button class="btn-bloc-left">En savoir plus</button>
+                </div>
+            </div>
+            <img src="kyoto/kyoto-temple.jpg" alt="" class="img-grid img-grid-1">
+
+
+            <div class="bloc bloc-right bloc-2">
+                <div class="bloc-txt-right">
+                    <h3>Visitez des temples</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla atque repudiandae eum omnis dolorem fugit, praesentium at rerum placeat ipsam animi similique et ducimus dicta quibusdam dolores fuga commodi nesciunt.
+                    </p>
+                    <button class="btn-bloc-right">En savoir plus</button>
+                </div>
+            </div>
+            <img src="kyoto/kyoto-temple.jpg" alt="" class="img-grid img-grid-2">
+
+
+
+            <div class="bloc bloc-left bloc-3">
+                <div class="bloc-txt-left">
+                    <h3>Visitez des temples</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla atque repudiandae eum omnis dolorem fugit, praesentium at rerum placeat ipsam animi similique et ducimus dicta quibusdam dolores fuga commodi nesciunt.
+                    </p>
+                    <button class="btn-bloc-left">En savoir plus</button>
+                </div>
+            </div>
+            <img src="kyoto/kyoto-temple.jpg" alt="" class="img-grid img-grid-3">
+
+            <div class="ligne-gauche"></div>
+            <div class="ligne-droite"></div>
+        </section>
+        <!-------------------------------------------------------------------------------------- SECTION PARALLAX --------------------------------------------->
+        <section class="parallax">
+            <p>冒険に行く</p>
+            <span>Partez à l'aventure</span>
+        </section>
+        <!----------------------------------------------------------------------------- SECTION TARIFS ------------------------------------------------------------------------>
+        <section class="sectionTarifs" id="tarifsId">
+            <h3>Laissez-vous guider ...</h3>
+            <hr>
+            <div class="containerTarifs">
+                <div class="carteTarifs">
+                    <h4>Classique</h4>
+                    <span>100€</span>
+                    <p>✔️ Visite de châteaux</p>
+                    <p>✔️ Visite de la ville </p>
+                    <p>✔️ Spectacle folklorique</p>
+                    <p>❌ Restaurant typique d'exception</p>
+                    <p>❌ Visite culturelle sur plusieurs jours</p>
+                    <p>❌ Accès privé à des lieux grandioses</p>
+                    <a href="">Réservez un guide </a>
+                </div>
+                <div class="carteTarifs">
+                    <h4>Découverte</h4>
+                    <span>250€</span>
+                    <p>✔️ Visite de châteaux</p>
+                    <p>✔️ Visite de la ville </p>
+                    <p>✔️ Spectacle folklorique</p>
+                    <p>❌ Restaurant typique d'exception</p>
+                    <p>❌ Visite culturelle sur plusieurs jours</p>
+                    <p>❌ Accès privé à des lieux grandioses</p>
+                    <a href="">Réservez un guide </a>
+                </div>
+                <div class="carteTarifs">
+                    <h4>Exception</h4>
+                    <span>500€</span>
+                    <p>✔️ Visite de châteaux</p>
+                    <p>✔️ Visite de la ville </p>
+                    <p>✔️ Spectacle folklorique</p>
+                    <p>❌ Restaurant typique d'exception</p>
+                    <p>❌ Visite culturelle sur plusieurs jours</p>
+                    <p>❌ Accès privé à des lieux grandioses</p>
+                    <a href="">Réservez un guide </a>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------- SECTION FORMULAIRE CONTACT --------------------------------------------->
+        <section class="sectionContact" id="contactId">
+            <h2>Rentrons en contact</h2>
+            <div class="formContainer">
+                <form action="">
+                    <div class="formBloc">
+                        <label for="prenom">Entrez votre prénom</label>
+                        <input type="text" id="prenom" placeholder="Prénom" required>
+                    </div>
+                    <div class="formBloc">
+                        <label for="nom">Entrez votre nom</label>
+                        <input type="text" id="nom" placeholder="nom" required>
+                    </div>
+                    <div class="formBloc">
+                        <textarea placeholder="Votre message" required></textarea>
+                    </div>
+                    <div class="formBloc">
+                        <input type="submit" value="ENVOYER" class="btn-sub">
+                    </div>
+            </div>
+            </form>
+            </div>
+        </section>
+        <!------------------------------------------------------------- FOOTER --------------------------------------------->
+        <footer>
+            Tous droits Réservés &copy;
+        </footer>
+    </body>
+
+</html>
