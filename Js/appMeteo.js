@@ -49,7 +49,7 @@ function afficherMeteo(villeSaisie) {
 		.then((donnees) => {
 			ville.textContent = donnees.name;
 			temperature.textContent = donnees.main.temp + "°C";
-			icon.innerHTML = `<img src="https://openweathermap.org/img/w/${donnees.weather[0].icon}.png">`;
+			icon.innerHTML = `<img src="https://openweathermap.org/img/w/${donnees.weather[0].icon}.png"><img src="https://openweathermap.org/img/w/${donnees.weather[0].icon}.png ">`;
 			console.log("appelé");
 		})
 		.catch((erreur) => {
@@ -57,4 +57,4 @@ function afficherMeteo(villeSaisie) {
 		});
 }
 
-afficherMeteo();
+afficherMeteo('Strasbourg');

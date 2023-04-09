@@ -1,0 +1,42 @@
+$black:#000;
+$white:#fff;
+$dark: #262626;
+$primary: #d3ab55;
+$secondary: #bbb;
+$menu:#1f1d1d;
+
+$dancingScript: 'Dancing Script', cursive;
+$josefinSans: 'Josefin Sans', sans-serif;
+$nunito: 'Nunito', sans-serif;
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $dark;
+}
+
+@mixin centering ($top){
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin textStyles($transform: uppercase){
+    text-transform: $transform;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+%fullSpace{
+    width: 100%;
+    height: 100%;
+}

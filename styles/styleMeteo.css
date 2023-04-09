@@ -86,7 +86,7 @@ label {
 }
 
 /* Styles pour les champs de formulaire de type texte */
-input[type="text"] {
+#ville {
 	height: 35px;
 	color: #222222d5;
 	padding: 3px;
@@ -98,17 +98,10 @@ input[type="text"] {
 	transition: 0.5s;
 }
 
-/* Styles pour les champs de formulaire de type texte lorsqu'ils sont sélectionnés */
-input:focus[type="text"] {
-	outline: none;
-	color: #000;
-	box-shadow: 0 3px 7px #000;
-}
-
 /* styles des icones */
 .icon img {
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 	margin: 0 auto;
 	background-size: contain;
 	background-repeat: no-repeat;

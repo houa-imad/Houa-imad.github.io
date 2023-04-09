@@ -1,0 +1,157 @@
+//NAVBAR
+.hamburger-menu{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:10%;
+    right:5%;
+    z-index: 20;
+    .menu{
+        @extend %fullSpace;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       cursor: pointer;
+       transition: all .5s;
+       transform-origin: center;
+
+       &-line{
+        width: 100%;
+        height: 4px;
+        background-color: $primary;
+        transition: all .5s .5s;
+        transform-origin: right;
+
+       }
+
+    }
+}
+//NAVBAR
+
+// HEADER
+.logo{
+    font-size: 70px;
+    color:$primary;
+    width: 110px;
+    height: 110px;
+    border: 5px solid $primary;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-decoration: none;
+    @include flexCenter;
+
+} 
+
+.main-name{
+    font-family: $nunito;
+    font-size: 50px;
+    color:$secondary;
+    @include textStyles();
+}
+
+.sub-name{
+    font-family: $nunito;
+    font-size: 18px;
+    color:$secondary;
+    text-align: center;
+    @include textStyles();
+}
+
+.main-heading{
+    font-family: $dancingScript;
+    font-size: 90px;
+    font-weight: 300;
+    color:$primary;
+    margin-bottom: 40px;
+}
+
+.sub-heading{
+    font-family: $josefinSans;
+    font-size: 25px;
+    font-weight: 300;
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-btn{
+    width: 170px;
+    height: 45px;
+    font-family: $josefinSans;
+    font-size: 15px;
+    text-transform: uppercase;
+    color:$primary ;
+    background-color: transparent;
+    border: 1px solid $primary;
+    outline: none;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $primary;
+        color:$dark;
+
+    }
+}
+// HEADER 
+
+//GALLERY
+.card{
+    width: 33.333%;
+    height:30vw;
+    position: relative;
+    overflow: hidden;
+    &:hover .card-overlay{
+        left:0;
+    }
+
+    &-overlay{
+        position:absolute;
+        top:0;
+        left: -100%;
+        z-index:10;
+        background-color: rgba($primary, .6);
+        color:$white;
+        @include flexCenter;
+        flex-direction: column;
+       @extend %fullSpace;
+       transition: all .7s ;
+
+
+       &-heading{
+        font-family: $nunito;
+        font-size: 40px;
+        @include textStyles(capitalize);
+       }
+
+       &-paragraph{
+        font-family: $josefinSans;
+        @include textStyles(capitalize);
+        margin-bottom: 30px;
+       }
+       &-btn{
+        width: 150px;
+        height: 40px;
+        color: $primary;
+        background-color: $white;
+        font-family: $josefinSans;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 1px solid $primary ;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+
+
+        
+       }
+    }
+
+    &-img{
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity: .5;
+    }
+}
+
+//GALLERY 
