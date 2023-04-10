@@ -103,6 +103,6 @@ let carousel = new Slideshow(
 		"Projet d'intégration d'un restaurant Géorgien. HTML, CSS, SCSS",
 		"test test test test",
 	],
-	2000,
+	10000,
 	["/Kyoto/index.html", "/scssGeorgia/index.html", "https://example.com/page3"]
 );
