@@ -7,9 +7,9 @@
 }
 
 body {
-	font-family: 'Roboto', 'Montserrat', sans-serif;
+	font-family: "Roboto", "Montserrat", sans-serif;
 	height: 100vh;
-	background: linear-gradient(90deg, #4d79ff, #4dc3ff, #80d4ff);
+	background: linear-gradient(90deg, #4d79ff 40%, #4dc3ff 70%, #80d4ff);
 }
 
 header {
@@ -60,37 +60,67 @@ hr {
 
 main #accueil {
 	width: 100%;
-	background-image: url("/images/moroccan-flower-dark.webp");
+	background-image: url("/images/5651981.jpg");
+	background-size: cover;
+	background-position: center top;
 	margin-top: 50px;
 	text-align: center;
 	height: calc(100vh - 50px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	border-radius: 5px;
+}
+.accueilBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 20%;
+	margin-bottom: 6%;
+}
+.accueilBox h1 {
+	font-size: clamp(32px, 5vw, 64px);
+	line-height: 0.5;
+}
+
+.accueilBox h2 {
+	font-size: clamp(12px, 2vw, 24px);
+	color: #4d5980;
+}
+.cv,
+.btnAproposAccueil {
+	display: inline-block;
+	margin-top: 10px;
+	width: clamp(150px, 20%, 250px);
+	font-size: clamp(12px, 2vw, 24px);
+	background-color: #263d80;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.cv:hover,
+.btnAproposAccueil:hover {
+	background-color: #131e40;
 }
 
 section {
+	margin-top: 100px;
 	margin-bottom: 50px;
+	padding: 20px;
 }
 
-h1, h2 {
-	font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-	font-size: 2.2em;
-	color: #4d5980;
-	margin-bottom: 20px;
-}
-
-section h2 {
-	font-size: 24px;
-	margin-bottom: 20px;
+h1,
+h2 {
+	font-family: "Montserrat", sans-serif;
+	color: #030242;
 }
 
 p {
 	font-size: 1.2em;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	color: #444;
 	line-height: 1.5;
 	margin-bottom: 10px;
@@ -140,7 +170,7 @@ section li a:hover {
 	display: flex;
 	justify-content: center;
 	transform: translateX(-76%);
-	animation: boxAPropos ease-in-out 3.5s forwards;
+	animation: animLoad ease-in-out 3.5s forwards;
 }
 
 .pauseBtn,
@@ -153,7 +183,7 @@ section li a:hover {
 	cursor: pointer;
 }
 
-@keyframes boxAPropos {
+@keyframes animLoad {
 	from {
 		transform: translateX(-76%);
 	}
@@ -249,4 +279,84 @@ footer {
 footer p {
 	margin: 0;
 	font-size: 14px;
+}
+
+/* CAROUSEL */
+#projets {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sliderTitle {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.slideShow {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-height: 750px;
+	/* overflow: hidden; */
+}
+
+.slideShow figure {
+	width: 100%;
+	max-width: 1550px;
+	position: relative;
+}
+
+.slideShow img {
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+	max-height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.slideShow figure:hover img {
+	opacity: 0.8;
+}
+
+.slideShow figure:hover{
+	transform: scale(1.05);
+}
+.slideShow figcaption {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	font-size: clamp(10px, 2vw, 20px);
+	border-radius: 5px;
+}
+
+.button {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	padding: 10px;
+}
+
+#btn {
+	left: 0px;
+}
+
+#btn2 {
+	right: 0px;
+}
+
+#btn3 {
+	left: 50%;
+	top: unset;
+	bottom: calc(0% + 40px);
+	transform: translateX(-25%);
 }
