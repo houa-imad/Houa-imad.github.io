@@ -94,8 +94,8 @@ class Slideshow {
 
 let carousel = new Slideshow(
 	[
-		"/images/thumbnail1.jpg",
-		"/images/thumbnail2.jpg",
+		"/images/thumbnail1.JPG",
+		"/images/thumbnail2.JPG",
 		"/images/thumbnail3.jpg",
 	],
 	[
