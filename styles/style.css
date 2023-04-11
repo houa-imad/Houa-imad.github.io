@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -25,7 +26,6 @@ header {
 	z-index: 9999;
 	top: 0;
 }
-
 nav {
 	width: 100%;
 }
@@ -39,13 +39,13 @@ nav {
 }
 
 .navLinks a {
-	text-decoration: none;
+	text-decoration: underline transparent;
 	color: inherit;
 	transition: text-decoration 0.3s;
 }
 
 .navLinks a:hover {
-	text-decoration: underline;
+	text-decoration: underline #fff;
 }
 
 .itemNav {
@@ -180,7 +180,7 @@ main #accueil {
 .slideShow figure {
 	width: 100%;
 	max-width: 1550px;
-	position: relative;
+	position: relative;	transition: 0.3s ease-in-out;
 }
 
 .slideShow img {
@@ -190,13 +190,14 @@ main #accueil {
 	max-height: 100%;
 	object-fit: cover;
 	border-radius: 5px;
+
 }
 .slideShow figure:hover img {
 	opacity: 0.8;
 }
 
 .slideShow figure:hover {
-	transform: scale(1.05);
+	transform: scale(1.01);
 }
 .slideShow figcaption {
 	width: 100%;
@@ -350,4 +351,3 @@ footer p {
 	margin: 0;
 	font-size: 14px;
 }
-
