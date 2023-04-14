@@ -6,7 +6,7 @@
 	padding: 0;
 }
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Roboto", "Montserrat", sans-serif;
 	height: 100vh;
 	background: linear-gradient(90deg, #2c59b8 40%, #2998c3 70%, #3a9ecd);
 }
@@ -65,10 +65,12 @@ main {
 			height: 20%;
 			margin-bottom: 200px;
 			h1 {
+				font-family: "Montserrat", "Roboto", sans-serif;
 				color: #030242;
 				font-size: clamp(24px, 5vw, 48px);
 			}
 			h2 {
+				font-family: "Montserrat", "Roboto", sans-serif;
 				color: #4d5980;
 				font-size: clamp(18px, 3vw, 36px);
 			}
@@ -99,6 +101,7 @@ main {
 		align-items: center;
 		margin-bottom: 50px;
 		.sliderTitle {
+			font-family: "Montserrat", "Roboto", sans-serif;
 			margin-bottom: 25px;
 			text-align: center;
 		}
@@ -165,6 +168,9 @@ main {
 		display: flex;
 		justify-content: center;
 		margin: 50px 0;
+		h2 {
+			font-family: "Montserrat", "Roboto", sans-serif;
+		}
 		.a-proposContentBox {
 			display: flex;
 			flex-direction: column;
@@ -200,6 +206,9 @@ main {
 		align-items: center;
 		flex-direction: column;
 		margin: 50px 0;
+		h2 {
+			font-family: "Montserrat", "Roboto", sans-serif;
+		}
 		form {
 			display: flex;
 			flex-direction: column;

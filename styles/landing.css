@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Montserrat", sans-serif;
   height: 100vh;
   background: linear-gradient(90deg, #2c59b8 40%, #2998c3 70%, #3a9ecd);
 }
@@ -68,10 +68,12 @@ main #accueil .accueilBox {
   margin-bottom: 200px;
 }
 main #accueil .accueilBox h1 {
+  font-family: "Montserrat", "Roboto", sans-serif;
   color: #030242;
   font-size: clamp(24px, 5vw, 48px);
 }
 main #accueil .accueilBox h2 {
+  font-family: "Montserrat", "Roboto", sans-serif;
   color: #4d5980;
   font-size: clamp(18px, 3vw, 36px);
 }
@@ -101,6 +103,7 @@ main #projets {
   margin-bottom: 50px;
 }
 main #projets .sliderTitle {
+  font-family: "Montserrat", "Roboto", sans-serif;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -167,6 +170,9 @@ main #a-propos {
   justify-content: center;
   margin: 50px 0;
 }
+main #a-propos h2 {
+  font-family: "Montserrat", "Roboto", sans-serif;
+}
 main #a-propos .a-proposContentBox {
   display: flex;
   flex-direction: column;
@@ -201,6 +207,9 @@ main #contact {
   align-items: center;
   flex-direction: column;
   margin: 50px 0;
+}
+main #contact h2 {
+  font-family: "Montserrat", "Roboto", sans-serif;
 }
 main #contact form {
   display: flex;
