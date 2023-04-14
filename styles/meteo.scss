@@ -1,0 +1,84 @@
+#ouvrir-popup {
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	z-index: 2;
+	width: clamp(48px, 35%, 200px);
+	font-size: 1.5em;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 5px 10px #000;
+	background: #263d80;
+	color: #fff;
+	height: 70px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.popup-container {
+	background: #4d5980;
+	position: fixed;
+	bottom: 70px;
+	right: 20px;
+	width: clamp(250px, 50%, 450px);
+	height: 50vh;
+	border-radius: 5px;
+	display: none;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0px 5px 10px;
+
+	.icon img {
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	p {
+		color: #fff;
+		font-size: clamp(1.5em, 4.5vw, 2.4em);
+	}
+
+	.inputFlex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: clamp(10px, 2vw, 24px);
+		width: 100%;
+
+		label {
+			color: #fff;
+		}
+		#ville {
+			height: 35px;
+			color: #222222d5;
+			padding: 3px;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			margin-left: 10px;
+			border: none;
+			transition: 0.3s;
+		}
+	}
+	.changeBtn {
+		width: 60%;
+		font-size: 1.5em;
+		border-radius: 5px;
+		border: none;
+		background: #263d80;
+		color: #fff;
+		height: 70px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.changeBtn:hover {
+		background: #131e40;
+	}
+}
+.open {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
