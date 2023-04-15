@@ -12,12 +12,18 @@ class Slideshow {
 
 		this.i = 0;
 
-		document.addEventListener("keydown", this.keyboard.bind(this));
-		this.btnPrec.addEventListener("click", this.imgprc.bind(this));
+		document.addEventListener("keydown", () => {
+			this.keyboard();
+		});
+		this.btnPrec.addEventListener("click", () => {
+			this.imgprc();
+		});
 		this.btnNext.addEventListener("click", () => {
 			this.imgpls();
 		});
-		this.pause.addEventListener("click", this.playPause.bind(this));
+		this.pause.addEventListener("click", () => {
+			this.playPause();
+		});
 
 		this.playPause();
 		document.querySelector("#Imgsld").src = this.img[this.i];
